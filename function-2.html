@@ -1,0 +1,38 @@
+
+  
+
+<html>
+        <head><title>find circle properties using function</title>
+        
+            <script>
+                 function AREA(radius)
+            {
+                 return 3.14*radius*radius;
+            }
+            function DIAMETER(radius)
+            {
+                return 2*radius;
+            }
+            function CIRCUMFERENCE(radius)
+            {
+                return 2*3.14*radius;
+            }
+            function ENTER()
+            {
+                var radius=document.getElementById("h1").value;
+                document.getElementById("demo").innerHTML=" AREA :"+AREA(radius)+"<br><br>"+
+                " DIAMETER :"+DIAMETER(radius)+"<br><br>"+
+                "CIRCUMFERENCE : "+CIRCUMFERENCE(radius);
+            }
+                    
+            </script> 
+            <body>
+                    
+                    ENTER NUMBER:<br><br>
+                    <input id="h1" type="text"><br><br>
+                    <button onClick="ENTER()">circle</button><br><br>
+                    <div id="demo" ></div>
+        </body>
+        
+        </html> 
+        

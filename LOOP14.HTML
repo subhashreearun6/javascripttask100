@@ -1,0 +1,27 @@
+<html>
+<head><title> ALBHABETS -LOOP</title>
+
+    <script>
+         function ENTER()
+         {
+            var i=0;
+            while(i<26)
+            {
+                var char=String.fromCharCode(97+i);
+                document.getElementById("demo").innerHTML+="<span style='color:red'>"+char+" "+"</span>";
+                i++;
+                
+            }
+        }
+        
+    </script> 
+    <body>
+            
+            ENTER :<br><br>
+            <input id="h1" type="text"><br><br>
+            <button onClick="ENTER()">FIND </button><br><br>
+            <div id="demo" ></div>
+            
+</body>
+
+</html> 

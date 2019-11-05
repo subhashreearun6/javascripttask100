@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>check alphabet or not-conditionals</title>
+        <script>
+        function ENTER()
+            {
+                var choice=parseInt(document.getElementById("h1").value);
+               
+                switch(choice)
+                {
+                    case 0:
+                    
+                        document.getElementById("demo").innerHTML="DAY : <span style='color:red'>sunday</span>";
+                        break;
+                    
+                    case 1:
+                    
+                        document.getElementById("demo").innerHTML="DAY : <span style='color:red'>monday</span>";
+                        break;
+                    
+                    case 2:
+                    
+                        document.getElementById("demo").innerHTML="DAY : <span style='color:red'>tuesday</span>";
+                        break;
+                    
+                    case 3:
+                        document.getElementById("demo").innerHTML="DAY : <span style='color:red'>wednesday</span>";
+                        break;
+                    
+                    case 4:
+                    
+                        document.getElementById("demo").innerHTML="DAY : <span style='color:red'>thursday</span>";
+                        break;
+                    
+                    case 5:
+                    
+                        document.getElementById("demo").innerHTML="DAY : <span style='color:red'>friday</span>";
+                        break;
+                    
+                    case 6:
+                
+                        document.getElementById("demo").innerHTML="DAY : <span style='color:red'>saturday</span>";
+                        break;
+                    
+                    default:
+                    
+                                 }
+            }
+        </script>
+    </head>
+
+<body>
+    
+    ENTER:<input type="text" id="h1"><span>[num from 0 to 6]</span><br><br>
+    <button onClick="ENTER()">DAY</button><br><br>
+    <div id="demo" style="color:darkgreen"></div>
+</body>
+</html>

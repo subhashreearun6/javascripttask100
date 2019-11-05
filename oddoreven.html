@@ -1,0 +1,25 @@
+
+<html>
+    <head>
+        <title>find odd or even</title>
+    
+    <script>
+           function odd_even(){
+            var val1 = parseInt(document.getElementById("id1").value)
+            
+            if(val1 % 2 ==0){
+                alert("Number is even");
+            }
+            else
+            {
+                alert("number is odd");
+            }
+           }
+        
+    </script>
+    </head>
+    <body>
+        <input type="text" id="id1" value=""/>
+        <button onClick="odd_even()" >find number</button>
+        </body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+<head><title> FACTORILA</title>
+
+    <script>
+         function ENTER()
+         {
+            var fact=1;
+            var value = parseInt(document.getElementById("h1").value);
+            for (var i=1;i<=value;i++)
+            {
+                fact=fact*i;
+            }
+            document.getElementById("demo").innerHTML="FACTORIAL IS "+fact;
+        }
+        
+    </script> 
+    <body>
+            
+            ENTER :<br><br>
+            <input id="h1" type="text"><br><br>
+            <button onClick="ENTER()">FACTORIAL </button><br><br>
+            <div id="demo" ></div>
+            
+</body>
+
+</html> 

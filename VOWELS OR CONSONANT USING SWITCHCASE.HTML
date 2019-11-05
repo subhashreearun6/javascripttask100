@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>VOWELS OR CONSONANT USING SWITCHCASE</title>
+<script>
+    function ENTER() {
+        var choice = document.getElementById("h1").value;
+            switch (choice) {
+                case 'a':
+                    document.getElementById("demo").innerHTML = "ALPHABET IS : <span style='color:red'>VOWEL</span>";
+                    break;
+                case 'e':
+                    document.getElementById("demo").innerHTML = "ALPHABET IS : <span style='color:red'>VOWEL</span>";
+                    break;
+                case 'i':
+                    document.getElementById("demo").innerHTML = "ALPHABET IS : <span style='color:red'>VOWEL</span>";
+                    break;
+                case 'o':
+                    document.getElementById("demo").innerHTML = "ALPHABET IS : <span style='color:red'>VOWEL</span>";
+                    break;
+                case 'u':
+                    document.getElementById("demo").innerHTML = "ALPHABET IS : <span style='color:red'>VOWEL</span>";
+                    break;
+                case 'A':
+                    document.getElementById("demo").innerHTML = "ALPHABET IS : <span style='color:red'>VOWEL</span>";
+                    break;
+                case 'E':
+                    document.getElementById("demo").innerHTML = "ALPHABET IS : <span style='color:red'>VOWEL</span>";
+                    break;
+                case 'I':
+                    document.getElementById("demo").innerHTML = "ALPHABET IS : <span style='color:red'>VOWEL</span>";
+                    break;
+                case 'O':
+                    document.getElementById("demo").innerHTML = "ALPHABET IS : <span style='color:red'>VOWEL</span>";
+                    break;
+                case 'U':
+                    document.getElementById("demo").innerHTML = "ALPHABET IS : <span style='color:red'>VOWEL</span>";
+                    break;
+                default:
+                    document.getElementById("demo").innerHTML = "ALPHABET IS : <span style='color:red'>CONSONANT</span>";
+                    break;
+            }
+
+    }
+</script></head>
+<body>
+        ENTER:<input type="text" id="h1"><span>[value from a-z to A-Z]</span><br><br>
+        <button onClick="ENTER()">ENTER</button><br><br>
+        <div id="demo" ></div>
+</body>
+</html>

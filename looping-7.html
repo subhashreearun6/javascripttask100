@@ -1,0 +1,25 @@
+<html>
+<head><title>sum of digits</title>
+
+    <script>
+        function ENTER() {
+            var n = parseFloat(document.getElementById("h1").value);
+            var res=0;
+            while(n)
+            {
+            res+=n%10;
+            var n=Math.floor(n/10);
+            document.getElementById("demo").innerHTML = "SUM OF DIGITS IS : "+parseInt(res);
+            }
+            
+        }
+    </script>
+    <body>
+            
+            ENTER NUMBER:<br><br>
+            <input id="h1" type="text"><br><br>
+            <button onClick="ENTER()">SUM_DIGITS</button><br><br>
+            <div id="demo" ></div>
+</body>
+
+</html>

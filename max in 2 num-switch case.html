@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>MAX B/W 2 NUMBERS -switch case</title>
+<script>
+    function ENTER() {
+       var num1 = parseInt(document.getElementById("h1").value);
+            var num2 = parseInt(document.getElementById("h2").value);
+            switch (true) {
+                case (num1>num2):
+                   
+                    document.getElementById("demo").innerHTML = num1+"  IS : <span style='color:red'>MAXIMUM</span>";
+                    break;
+                case (num2>num1):
+                    document.getElementById("demo").innerHTML = num2+"  IS : <span style='color:red'>MINIMUM</span>";
+                    break;
+                default: console.log('-> Something went wrong');
+                
+    }
+</script></head>
+<body>
+    NUM1:
+    <input type="text" id="h1"><br><br>
+    NUM2:
+    <input type="text" id="h2"><br><br>
+    <button onClick="ENTER()">ENTER</button><br><br>
+    <div id="demo" ></div>
+        
+<button onClick="ENTER()">ENTER</button><br><br>
+<div id="demo" ></div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+<head><title>PALINDROME STRING</title>
+
+    <script>
+         function ENTER()
+         {
+            var str = document.getElementById("h1").value;
+            var revstr=[];
+            length=str.length-1;
+            for(var i=length;i>=0;i--)
+            {
+                revstr.push(str[i]);
+            }
+            if(revstr.join('')==str)
+            {
+                document.getElementById("demo").innerHTML=str+" : IS PALINDROME";
+                    
+            }
+            else
+            {
+                document.getElementById("demo").innerHTML=str+" : IS NOT A PALINDROME";
+            }
+        }
+        
+    </script> 
+    <body>
+            
+            ENTER STRING1:<br><br>
+            <input id="h1" type="text"><br><br>
+            
+            
+            <button onClick="ENTER()"> PALINDROME STRING </button><br><br>
+            <div id="demo" ></div>
+            
+</body>
+
+</html> 

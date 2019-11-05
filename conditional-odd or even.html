@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>odd or even -conditionals</title>
+        <script>
+        function ENTER()
+            {
+                var Num1=document.getElementById("h1").value;
+                var NUMB=Num1%2==0?'EVEN':'ODD';
+                document.getElementById("demo").innerHTML="<h4>"+Num1+" IS "+NUMB+" NUMBER</h4>";
+            }
+        </script>
+    </head>
+
+<body>
+        <input id="h1"type="text"><br><br>
+        <button onClick="ENTER()">CHECK</button>
+        <div id="demo" ></div>
+        </body>
+        </html>

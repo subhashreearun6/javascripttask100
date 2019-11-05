@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>positive ,negative ,number</title>
+<script>
+    function ENTER() {
+        var num = parseInt(document.getElementById("h1").value);
+        switch (Math.sign(num))
+         {
+            case 1:
+                document.getElementById("demo").innerHTML = num + "  IS : <span style='color:red'>POSITIVE</span>";
+                break;
+            case 0:
+                document.getElementById("demo").innerHTML = num + "  IS : <span style='color:red'>ZERO</span>";
+                break;
+            case -1:
+                document.getElementById("demo").innerHTML = num + "  IS : <span style='color:red'>NEGATIVE</span>";
+                break;
+                
+    }
+    }
+</script></head>
+<body>
+    NUM:
+<input type="text" id="h1"><br><br>
+<button onClick="ENTER()">ENTER</button><br><br>
+<div id="demo" ></div>
+</body>
+</html>

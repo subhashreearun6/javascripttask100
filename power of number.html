@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Power of number</title>
+    
+    <script>
+        function power()
+        {
+            var val1 = parseInt(document.getElementById("value1").value);
+            
+            var ansD = document.getElementById("answer");
+            ansD.value = val1*val1 ;
+        }
+        
+    </script>
+    </head>
+    <body>
+        number=<input type="text" id="value1" value="" name="value1"></input>
+        
+        <button onClick="power()">Calculate power</button>
+        Answer = <input type="text" id="answer" name="answer" value=""/>
+
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+<head><title>COUNT OF STRING,SPEC CHARS,NUMBERS</title>
+
+    <script>
+         function ENTER()
+         {
+            var str = document.getElementById("h1").value;
+            var strCount=0;
+            var numCount=0;
+            var sCount=0;
+            var regstr=/^[A-Za-z]+$/;
+            var regspecial=/^[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]*$/;
+            var regnum=/^[0-9]+$/;
+                for(i=0;i<str.length;i++)
+                {
+                    if((str.charAt(i)).match(regstr))
+                    {
+                        strCount++;
+                    } 
+                    else if((str.charAt(i)).match(regnum))
+                    {
+                        numCount++;
+                    }
+                    else if((str.charAt(i)).match(regspecial))
+                    {
+                        sCount++;
+                    }
+                    
+                }
+                document.getElementById("demo").innerHTML=" STRING COUNT :"+strCount+"<br><br>"+
+                    "NUMBER COUNT :"+numCount+"<br><br>"+
+                    "SPECIAL CHAR COUNT :"+sCount; 
+                }
+        
+    </script> 
+    <body>
+            
+            ENTER STRING1:<br><br>
+            <input id="h1" type="text"><br><br>
+            
+            
+            <button onClick="ENTER()"> FIND STRING </button><br><br>
+            <div id="demo" ></div>
+            
+</body>
+
+</html> 

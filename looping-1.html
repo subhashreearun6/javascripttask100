@@ -1,0 +1,27 @@
+
+<html>
+    <head>
+        <title>sum of all even natural numbers</title>
+        <script>
+            function ENTER() {
+            var n = parseInt(document.getElementById("h1").value);
+            var i = 1;
+            var res = 0;
+            while (i <= n) 
+            {
+                if (i % 2 == 0) 
+                {
+                    res = res + i;
+                }
+                i++;
+            }
+            document.getElementById("demo").innerHTML="result :" + res;
+            }
+        </script>
+    </head>
+    <body>
+            <input id="h1" type="text"><br><br>
+            <button onClick="ENTER()">SUM-EVEN</button>
+            <div id="demo"></div>  
+    </body>
+</html>

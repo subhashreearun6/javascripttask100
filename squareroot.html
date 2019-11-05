@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>square root of number</title>
+    
+    <script>
+        function square()
+        {
+            var val1 = parseInt(document.getElementById("value1").value);
+            
+            var ansD = document.getElementById("answer");
+            ansD.value = val1*0.5 ;
+        }
+        
+    </script>
+    </head>
+    <body>
+        number=<input type="text" id="value1" value="" name="value1"></input>
+        
+        <button onClick="square()">Calculate square</button>
+        Answer = <input type="text" id="answer" name="answer" value=""/>
+
+    </body>
+</html>

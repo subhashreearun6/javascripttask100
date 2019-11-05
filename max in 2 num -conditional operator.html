@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>MAX B/W 2 NUMBERS -CONDITIONAL OPERATOR</title>
+<script>
+    function ENTER() {
+         var Num1=document.getElementById("h1").value;
+                var Num2=document.getElementById("h2").value;
+                
+                var MAX=(Num1>Num2)?Num1:Num2;
+                document.getElementById("demo").innerHTML="<h4>MAXIMUM  : "+MAX+"</h4>";
+
+    }
+</script></head>
+<body>
+    ENTER THE two NUMBER:<br><br>
+        <input id="h1"type="text"><br><br>
+        <input id="h2"type="text"><br><br>
+        
+<button onClick="ENTER()">ENTER</button><br><br>
+<div id="demo" ></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Area of Rectangle</title>
+    
+    <script>
+        function areaofrectangle()
+        {
+            var val1 = parseInt(document.getElementById("value1").value);
+            var val2 = parseInt(document.getElementById("value2").value);
+            var ansD = document.getElementById("answer");
+            ansD.value = val1*val2;
+        }
+    </script>
+    </head>
+    <body>
+       L= <input type="text" id="value1" value="" name="value1"></input>
+        W=<input type="text" id="value2" value="" name="value2"></input>
+        <button onClick="areaofrectangle()">Calculate Area</button>
+        Answer = <input type="text" id="answer" name="answer" value=""/>
+
+    </body>
+</html>

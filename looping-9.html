@@ -1,0 +1,28 @@
+
+<html>
+<head><title>reverse of digits</title>
+
+    <script>
+        function ENTER() {
+            var n = parseFloat(document.getElementById("h1").value);
+            var rem=0;
+            var rev=[];
+            while(n)
+            {
+            rem=n%10;
+            rev.push(rem);
+            var n=Math.floor(n/10);
+            document.getElementById("demo").innerHTML = "reverse OF DIGITS IS : "+rev.join('');
+            }
+            
+        }
+    </script>
+    <body>
+            
+            ENTER NUMBER:<br><br>
+            <input id="h1" type="text"><br><br>
+            <button onClick="ENTER()">REVERSE_DIGITS</button><br><br>
+            <div id="demo" ></div>
+</body>
+
+</html>

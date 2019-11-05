@@ -1,0 +1,26 @@
+
+<html>
+<head><title>pattern program</title>
+
+    <script>
+        function ENTER() {
+           var n=parseInt(document.getElementById("h1").value);
+            for( var i=1;i<=n;i++)
+            {
+               for(var j=1;j<=i;j++)
+               {
+                   document.write("$");
+               }
+               document.write("<br />");
+            }
+        }
+    </script> 
+    <body>
+            
+            ENTER NUMBER:<br><br>
+            <input id="h1" type="text"><br><br>
+            <button onClick="ENTER()">pattern program</button><br><br>
+            <div id="demo" ></div>
+</body>
+
+</html> 

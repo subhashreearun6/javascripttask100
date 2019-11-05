@@ -1,0 +1,51 @@
+<html>
+    <head><title>all arithmetic opertaions</title>
+    <script>
+            function addition()
+                {
+                        var val1 = parseInt(document.getElementById("value1").value);
+                        var val2 = parseInt(document.getElementById("value2").value);
+                        var ansD = document.getElementById("answer");
+                        ansD.value = val1 + val2;
+                }
+            function subtraction()
+                {
+                        var val1 = parseInt(document.getElementById("value1").value);
+                        var val2 = parseInt(document.getElementById("value2").value);
+                        var ansD = document.getElementById("answer");
+                        ansD.value = val1 - val2;
+                }
+            function multiplication()
+                {
+                        var val1 = parseInt(document.getElementById("value1").value);
+                        var val2 = parseInt(document.getElementById("value2").value);
+                        var ansD = document.getElementById("answer");
+                        ansD.value = val1 * val2;
+                }
+            function division()
+                {
+                        var val1 = parseInt(document.getElementById("value1").value);
+                        var val2 = parseInt(document.getElementById("value2").value);
+                        var ansD = document.getElementById("answer");
+                        ansD.value = val1 / val2;
+                }
+             function exponent()
+                {
+                        var val1 = parseInt(document.getElementById("value1").value);
+                        var val2 = parseInt(document.getElementById("value2").value);
+                        var ansD = document.getElementById("answer");
+                        ansD.value = val1 ^ val2;
+                }
+    </script></head>
+    <body>
+    value1 = <input type="text" id="value1" name="value1" value=""/>
+        value2 = <input type="text" id="value2" name="value2" value=""/><br></br>
+        <button onClick="addition()"  >ADD</button>
+        <button onClick="subtraction()">SUB</button>
+        <button onClick="multiplication()">MUL</button>
+        <button onClick="division()">DIV</button>
+        <button onClick="exponent()">EXPONENT</button>
+        <br></br>
+        Answer = <input type="text" id="answer" name="answer" value=""/>
+    </body>
+</html>

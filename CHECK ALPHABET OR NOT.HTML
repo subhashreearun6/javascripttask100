@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>check alphabet or not-conditionals</title>
+        <script>
+        function ENTER()
+            {
+                var Letter=document.getElementById("h1").value;
+                var reg=/^[A-Za-z]+$/;
+                var LETTER=(Letter.match(reg))?' AN ALPHABET':'NOT AN ALPHABET';
+                document.getElementById("demo").innerHTML="<h4 style='color:red'>"+Letter+"</h4><h5> IS "+LETTER+" </h5>";
+            }
+        </script>
+    </head>
+
+<body>LETTER :<br><br>
+        <input id="h1"type="text"><br><br>
+        <button onClick="ENTER()">CHECK</button>
+        <div id="demo" style="color:rgb(230, 75, 171);"></div>
+        </body>
+        </html>

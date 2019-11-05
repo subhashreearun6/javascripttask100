@@ -1,0 +1,47 @@
+
+
+<html>
+<head><title>prime number using function</title>
+
+    <script>
+         function PRIME(value)
+         {
+            for ( var i = 2; i < value; i++ ) 
+            {
+                if ( value % i === 0 ) 
+                {
+                     return false;
+                }
+            }
+            return true;
+        }
+                
+    
+        function ENTER()
+        {
+            var input = parseInt(document.getElementById("h1").value);
+            var arr = [2];
+            for ( var i = 3; i < input; i=i+2 ) 
+            {
+                    if ( PRIME(i) ) 
+                    {
+                        arr.push(i);
+                        console.log(arr);
+                    }
+                    
+            }
+            
+            document.getElementById("demo").innerHTML="PRIME NUMBERS :"+arr;
+        }
+            
+    </script> 
+    <body>
+            
+            ENTER NUMBER:<br><br>
+            <input id="h1" type="text"><br><br>
+            
+            <button onClick="ENTER()">find prime number</button><br><br>
+            <div id="demo" ></div>
+</body>
+
+</html> 

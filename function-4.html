@@ -1,0 +1,33 @@
+
+
+<html>
+<head><title>find ODD or EVEN using function</title>
+
+    <script>
+         function CHECK(input)
+                {
+                    if (input%2==0)
+                    {
+                        return 'EVEN';
+                    }
+                    else return 'ODD';
+                }
+            
+            function ENTER()
+            {
+                var input=document.getElementById("h1").value;
+                document.getElementById("demo").innerHTML=CHECK(input);
+            }
+            
+            
+    </script> 
+    <body>
+            
+            ENTER NUMBER:<br><br>
+            <input id="h1" type="text"><br><br>
+            
+            <button onClick="ENTER()">find ODD or EVEN</button><br><br>
+            <div id="demo" ></div>
+</body>
+
+</html> 

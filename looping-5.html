@@ -1,0 +1,26 @@
+<html>
+
+<head><title>to find first and last digits </title>
+    <script>
+        function ENTER() {
+            var n = parseFloat(document.getElementById("h1").value);
+            var lnum=n%10;
+            while(n>10)
+            {
+            var n=Math.floor(n/10);
+            
+            }
+            document.getElementById("demo").innerHTML = "FIRST DIGIT IS  :"+n+"<br><br>"+
+            "LAST DIGIT IS  :"+lnum;
+            
+        }
+    </script></head>
+    <body>
+            
+            
+            ENTER NUMBER: <input id="h1" type="text"><br><br>
+            <button onClick="ENTER()">DIGITS</button><br><br>
+            <div id="demo" ></div>
+</body>
+
+</html>

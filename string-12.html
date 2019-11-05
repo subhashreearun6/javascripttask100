@@ -1,0 +1,27 @@
+<html>
+<head><title>REVERSE ORDER OF WORD IN STRING</title>
+
+    <script>
+         function ENTER()
+         {
+            var str = document.getElementById("h1").value;
+            //var revwords=[];
+            str=str.replace(/(^\s*)|(\s*$)/gi,"");//for remove start nd end space
+            str=str.replace(/[ ]{2,}/gi," ");//for remove double space
+            str=str.replace(/\n /,"\n");//for remove newline chararcter
+                document.getElementById("demo").innerHTML=" WORD COUNT :"+str.split(' ').reverse().join(' ');
+        }
+        
+    </script> 
+    <body>
+            
+            ENTER STRING1:<br><br>
+            <input id="h1" type="text"><br><br>
+            
+            
+            <button onClick="ENTER()"> REVERSE STRING </button><br><br>
+            <div id="demo" ></div>
+            
+</body>
+
+</html> 

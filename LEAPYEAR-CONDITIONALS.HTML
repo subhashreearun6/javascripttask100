@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>LEAP YEAR-CONDITIONAL LOOP</title>
+<script>
+    function ENTER() {
+         var Year=document.getElementById("h1").value;
+                var LEAP=(Year%4==0 || Year%400==0)?'LEAP':'NOT LEAP';
+                document.getElementById("demo").innerHTML="<h4>"+Year+" IS "+LEAP+" YEAR</h4>";
+
+    }
+</script></head>
+<body>
+    ENTER YEAR:
+<input type="text" id="h1"><br><br>
+<button onClick="ENTER()">ENTER</button><br><br>
+<div id="demo" ></div>
+</body>
+</html>

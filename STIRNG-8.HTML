@@ -1,0 +1,40 @@
+<html>
+<head><title>COUNT CONSONANT AND VOWELS STRING</title>
+
+    <script>
+         function ENTER()
+         {
+            var str = document.getElementById("h1").value;
+            var vowelCount=0;
+            var consCount=0;
+            
+                for(var i=0;i<str.length;i++)
+                {
+                    if((str.charAt(i)=='a'||str.charAt(i)=='e'||str.charAt(i)=='i'||str.charAt(i)=='o'||str.charAt(i)=='u')||(str.charAt(i)=='A'||str.charAt(i)=='E'||str.charAt(i)=='I'||str.charAt(i)=='O'||str.charAt(i)=='U'))
+                    {
+                        vowelCount++;
+                    } 
+                    else if(str.charAt(i)>='a'&& str.charAt(i)<='z'|| str.charAt(i)>'A'&& str.charAt(i)<='Z')
+                    {
+                        consCount++;
+                    }
+                   
+                    
+                }
+                document.getElementById("demo").innerHTML=" VOWEL COUNT :"+vowelCount+"<br><br>"+
+                    "CONSONANT COUNT :"+consCount;  
+                }
+        
+    </script> 
+    <body>
+            
+            ENTER STRING1:<br><br>
+            <input id="h1" type="text"><br><br>
+            
+            
+            <button onClick="ENTER()"> FIND STRING </button><br><br>
+            <div id="demo" ></div>
+            
+</body>
+
+</html> 

@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>COUNT DIGITS</title>
+    <script>
+        function ENTER() {
+            var n = parseFloat(document.getElementById("h1").value);
+            var res = (n + '').replace('.' , '').length;
+            document.getElementById("demo").innerHTML = res;
+        }
+    </script>
+    </head>
+    <body>
+    <input id="h1" type="text"><br><br>
+    <button onClick="ENTER()">DIGITS</button><br><br>
+    <div id="demo" ></div>
+    </body>
+
+</html>
+

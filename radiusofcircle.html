@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Perimeter of Rectangle</title>
+    
+    <script>
+        function diameter()
+        {
+            var val1 = parseInt(document.getElementById("value1").value);
+            
+            var ansD = document.getElementById("answer");
+            ansD.value = 2*val1 ;
+        }
+        function area()
+        {
+            var val1 = parseInt(document.getElementById("value1").value);
+            var ansD = document.getElementById("answer");
+            ansD.value = (22/7)*(val1*val1) ;
+        }
+        function circumference()
+        {
+            var val1 = parseInt(document.getElementById("value1").value);
+            
+            var ansD = document.getElementById("answer");
+            ansD.value = 2*(22/7)*val1 ;
+        }
+    </script>
+    </head>
+    <body>
+       r= <input type="text" id="value1" value="" name="value1"></input>
+        
+        <button onClick="diameter()">Calculate diameter</button>
+        <button onClick="area()">Calculate area</button>
+        <button onClick="circumference()">Calculate circumfrence</button>
+        Answer = <input type="text" id="answer" name="answer" value=""/>
+
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Days calculation</title>
+    
+    <script>
+        function years()
+        {
+            var day= parseInt(document.getElementById("value1").value);
+            
+            var ans1 = document.getElementById("answer1");
+            ans1.value = day/365 ;
+            var ans2 = document.getElementById("answer2");
+            ans2.value = (day%365)/7;
+            var ans3 = document.getElementById("answer3");
+            ans3.value = day-((ans1*365)+(ans2*7)) ;
+        }
+    </script>
+    </head>
+    <body>
+       Day= <input type="text" id="value1" value="" name="value1"></input>
+        
+        <button onClick="years()">Calculate</button>
+        
+       
+       year= <input type="text" id="answer1" name="answer1" value=""/>
+       week= <input type="text" id="answer2" name="answer2" value=""/>
+        day = <input type="text" id="answer3" name="answer3" value=""/>
+
+    </body>
+</html>

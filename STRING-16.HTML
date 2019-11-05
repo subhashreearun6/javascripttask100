@@ -1,0 +1,34 @@
+<html>
+<head><title> OCCURANCE COUNT OF A STRING</title>
+
+    <script>
+         function ENTER()
+         {
+            var str = document.getElementById("h1").value;
+            var search=document.getElementById("h2").value;
+            var count=0;
+            for(var i=0;i<str.length;i++)
+            {
+                if(str[i]===search)
+                {
+                count++;
+                }
+            }
+            document.getElementById("demo").innerHTML="<i>"+search+"</i>  COUNT :"+count;
+        }
+        
+    </script> 
+    <body>
+            
+            ENTER STRING1:<br><br>
+            <input id="h1" type="text"><br><br>
+            SEARCH STRING1:<br><br>
+            <input id="h2" type="text"><br><br>
+            
+            
+            <button onClick="ENTER()">OCCURANCE-COUNT </button><br><br>
+            <div id="demo" ></div>
+            
+</body>
+
+</html> 

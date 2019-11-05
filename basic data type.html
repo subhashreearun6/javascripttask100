@@ -1,0 +1,28 @@
+<html>
+    <head><title>BASIC DATA TYPES</title>
+        <script >
+            //primitive data types:
+            var num=24;
+            var str="Halima";
+            var undef=undefined;
+            var x=10;
+            var y=24;
+            //non-primitive data types;
+            var guvi={staff:"Rajavasanth",topic:"Javascript"};
+            var guvistudent=["aaaa","bbb","ccc","dddd"];
+            function enter(){
+                document.getElementById("one").innerHTML="today is 29/10/2019";
+            }
+            document.getElementById("one").innerHTML="<h3> Typeof" +" "+num +":</h3>"+"<h4>"+typeof num+"</h4>"+
+            "<br>"+"<h3>Typeof" +" "+" "+str +":</h3>"+"<h4>"+typeof str+"</h4>"+
+            "<br>"+"<h3> Typeof" +" "+undef +":</h3>"+"<h4>"+typeof undef+"</h4>"+
+            "<br>"+"<h3> Typeof" +" "+(x==y) +":</h3>"+"<h4>"+typeof (x==y)+"</h4>"+
+            "<br>"+"<h3> Typeof object:" +"{Staff:"+guvi.staff +"}"+":</h3>"+"<h4>"+typeof guvi+"</h4>"+
+            "<br>"+"<h3> Typeof Array objects:" +" ["+guvistudent +"]"+":</h3>"+"<h4>"+typeof guvistudent+"</h4>"
+            "<br>"+"<h3> Typeof function zenclass():</h3>" +"<h4>"+typeof function enter(){}+"/<h4>";
+        </script></head>
+    <body style="background-color: rgb(194, 221, 96);">
+            <div id="one"></div>    
+    </body>
+
+</html>

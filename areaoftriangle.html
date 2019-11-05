@@ -1,0 +1,24 @@
+
+<html>
+    <head>
+        <title>find area of triangle</title>
+    
+    <script>
+        function areaoftriangle()
+        {
+            var val1 = parseInt(document.getElementById("value1").value);
+            var val2 = parseInt(document.getElementById("value2").value);
+            var ansD = document.getElementById("answer");
+            ansD.value = (val1*val2)/2;
+        }
+        
+    </script>
+    </head>
+    <body>
+       height=<input type="text" id="value1" value="" name="value1"></input>
+        breadth=<input type="text" id="value2" value="" name="value2"></input>
+        <button onClick="areaoftriangle()">Calculate area</button>
+        area of triangle = <input type="text" id="answer" name="answer" value=""/>
+
+    </body>
+</html>

@@ -1,0 +1,26 @@
+
+<html>
+    <head>
+        <title>find simple interest</title>
+    
+    <script>
+        function simpleinterest()
+        {
+            var val1 = parseInt(document.getElementById("value1").value);
+            var val2 = parseInt(document.getElementById("value2").value);
+            var val3 = parseInt(document.getElementById("value3").value);
+            var ansD = document.getElementById("answer");
+            ansD.value = (val1*val2*val3)/100;
+        }
+        
+    </script>
+    </head>
+    <body>
+       P=<input type="text" id="value1" value="" name="value1"></input>
+        R=<input type="text" id="value2" value="" name="value2"></input>
+        T=<input type="text" id="value3" value="" name="value3"></input>
+        <button onClick="simpleinterest()">Calculate S.I</button>
+        simple interest = <input type="text" id="answer" name="answer" value=""/>
+
+    </body>
+</html>

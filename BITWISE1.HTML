@@ -1,0 +1,22 @@
+<html>
+<head><title> DECIMAL TO BINARY IN BITWISE</title>
+
+    <script>
+         function ENTER()
+         {
+            var value = parseInt(document.getElementById("h1").value);
+            var bin=(value>>>0).toString(2);
+            document.getElementById("demo").innerHTML="DECIMAL TO BINARY IN BITWISE :"+bin;
+        }
+        
+    </script> 
+    <body>
+            
+            ENTER :<br><br>
+            <input id="h1" type="text"><br><br>
+            <button onClick="ENTER()">CONVERT </button><br><br>
+            <div id="demo" ></div>
+            
+</body>
+
+</html> 

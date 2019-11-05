@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>odd or even -conditionals</title>
+        <script>
+        function ENTER()
+            {
+                const a = parseInt(document.getElementById("h1").value);
+            const b =parseInt(document.getElementById("h2").value);
+            const c = parseInt(document.getElementById("h3").value);
+            const d = parseInt(Math.sqrt(Math.abs(b * b - (4 * a * c))));
+            console.log(parseInt(Math.sqrt(Math.abs(b * b - (4 * a * c)))));
+            switch (true)
+            {
+                case (d>0):
+                var rt1 = (-b + d) / (2*a);
+                var rt2 = (-b - d) / (2*a);
+                document.getElementById("demo").innerHTML = "REAL AND DISTINCT ROOTS ARE:<br><br>  Roots For Quadratic Equation " + a + "x2+" + b + "x+" + c + "= 0  is:" + "(<span style='color:red'>" + rt1 + "," + rt2 + "</span>)";
+                break;
+                case (d==0):
+                var rt1 = -b  / (2*a);
+                var rt2 =rt1;
+                document.getElementById("demo").innerHTML = "REPEATED ROOTS ARE:<br><br> Roots For Quadratic Equation " + a + "x2+" + b + "x+" + c + "= 0  is:" + "(<span style='color:red'>" + rt1 + "," + rt2 + "</span>)";
+                break;
+                default:
+                var rt1 = -b  / (2*a);
+                var rt2 =  d / (2*a);
+                document.getElementById("demo").innerHTML = "COMPLEX ROOTS ARE:<br><br>  Roots For Quadratic Equation " + a + "x2+" + b + "x+" + c + "= 0  is:" + "(<span style='color:red'>" + rt1 + ", i" + rt2 + "</span>)";
+                break;
+
+            }
+        </script>
+    </head>
+
+<body>
+        <input type="text" placeholder="a" id="h1" style="color:rgb(26, 5, 77)"><br><br>
+    <input type="text" placeholder="b" id="h2" style="color:rgb(26, 5, 77)"><br><br>
+    <input type="text" placeholder="c" id="h3" style="color:rgb(26, 5, 77)"><br><br>
+        <button onClick="ENTER()">CHECK</button>
+        <div id="demo" ></div>
+        </body>
+        </html>

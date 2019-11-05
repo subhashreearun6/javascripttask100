@@ -1,0 +1,29 @@
+
+<html>
+<head><title>fibbonacci of digits</title>
+
+    <script>
+        function ENTER() {
+            var n = parseInt(document.getElementById("h1").value);
+            var num1=0;
+            var num2=1; 
+            document.getElementById("demo").innerHTML="FIBONACCI SERIES :";
+            for( var i=3;i<=n;i++)
+            {
+               var num3=num1+num2;
+               
+                document.getElementById("demo").innerHTML += num3;
+                num1=num2;
+                num2=num3;
+            }
+        }
+    </script>
+    <body>
+            
+            ENTER NUMBER:<br><br>
+            <input id="h1" type="text"><br><br>
+            <button onClick="ENTER()">FIBBONACCI</button><br><br>
+            <div id="demo" ></div>
+</body>
+
+</html> 

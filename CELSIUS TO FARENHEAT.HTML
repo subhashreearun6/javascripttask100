@@ -1,0 +1,22 @@
+<html>
+<head><title>CELSIUS TO FARENHEAT</title>
+
+    <script>
+         function ENTER()
+         {
+            var Celcius=document.getElementById("h1").value;
+                var FAHRENHEIT=(Celcius * 9/5) + 32 ;
+                document.getElementById("demo").innerHTML="<h3>Fahrenheit is  : "+"<span style='color:red;'>"+FAHRENHEIT+"°F</span>"+"</h3><br>";
+        }
+        
+    </script> 
+    <body>
+            
+            ENTER :<br><br>
+            <input id="h1" type="text"><br><br>
+            <button onClick="ENTER()">FIND </button><br><br>
+            <div id="demo" ></div>
+            
+</body>
+
+</html> 

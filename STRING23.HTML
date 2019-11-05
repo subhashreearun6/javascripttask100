@@ -1,0 +1,22 @@
+<html>
+<head><title> DECIMAL TO HEXADECIMAL CONVERTION</title>
+
+    <script>
+         function ENTER()
+         {
+            var value = parseInt(document.getElementById("h1").value);
+            var hex=parseInt(value,10).toString(16);
+            document.getElementById("demo").innerHTML="DECIMAL TO HEXADECIMAL :"+hex;
+        }
+        
+    </script> 
+    <body>
+            
+            ENTER :<br><br>
+            <input id="h1" type="text"><br><br>
+            <button onClick="ENTER()">CONVERT </button><br><br>
+            <div id="demo" ></div>
+            
+</body>
+
+</html> 

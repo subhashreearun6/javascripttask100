@@ -1,0 +1,27 @@
+<html>
+<head><title>COMPOUND-INTREST</title>
+
+    <script>
+         function ENTER()
+         {
+            var Principal=document.getElementById("h1").value;
+                var Rate=document.getElementById("h2").value;
+                var Totalyear=document.getElementById("h3").value;
+                var N=document.getElementById("h4").value;
+                var CI=(parseFloat(Principal)*(1+parseFloat(Rate)/parseInt(N)))**(parseInt(N)*parseInt(Totalyear));
+                document.getElementById("two").innerHTML="<h3>COMPOUND INTEREST : "+CI+"</h3>";
+        }
+        
+    </script> 
+    <body>
+            
+        P-Principal:<input id="h1"type="text"><br><br>
+        R-Rate:<input id="h2"type="text"><br><br>
+        T-Totalyear:<input id="h3"type="text"><br><br>
+        n-TimesCompounded:<input id="h4"type="text"><br><br>
+        <button onClick="ENTER()">COMPUND_INTEREST</button>
+        <div id="two" ></div>
+            
+</body>
+
+</html> 

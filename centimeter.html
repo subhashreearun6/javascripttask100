@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>centimeter conversion</title>
+    
+    <script>
+        function meter()
+        {
+            var cm = parseInt(document.getElementById("value1").value);
+            
+            var ansD = document.getElementById("answer");
+            ansD.value = cm/100 ;
+        }
+        function kilometer()
+        {
+            var cm = parseInt(document.getElementById("value1").value);
+            var ansD = document.getElementById("answer");
+            ansD.value = cm/100000 ;
+        }
+       
+    </script>
+    </head>
+    <body>
+       cm= <input type="text" id="value1" value="" name="value1"></input>
+        
+        <button onClick="meter()">Calculate meter</button>
+        <button onClick="kilometer()">Calculate kilometer</button>
+       
+        Answer = <input type="text" id="answer" name="answer" value=""/>
+
+    </body>
+</html>

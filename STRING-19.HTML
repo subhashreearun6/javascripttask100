@@ -1,0 +1,22 @@
+<html>
+<head><title> REMPVE TRAILING  SPACE IN A STRING</title>
+
+    <script>
+         function ENTER()
+         {
+            var str = document.getElementById("h1").value;
+            str=str.replace(/\s+$/g, "");
+            document.getElementById("demo").innerHTML="REMOVE EXTRA SPACE :"+str;
+        }
+        
+    </script> 
+    <body>
+            
+            ENTER STRING1:<br><br>
+            <input id="h1" type="text"><br><br>
+            <button onClick="ENTER()">TRIALING SPACE </button><br><br>
+            <div id="demo" ></div>
+            
+</body>
+
+</html> 

@@ -1,0 +1,36 @@
+
+
+<html>
+<head><title>COMPARE TWO STRING</title>
+
+    <script>
+         function ENTER()
+         {
+                    var str=document.getElementById("h1").value;
+                    var str2=document.getElementById("h2").value;
+                    document.getElementById("demo").innerHTML="COMPARINSON GIVES  :"+str.localeCompare(str2);
+                    
+    
+                }
+                
+                
+                
+            
+    </script> 
+    <body>
+            
+            ENTER STRING1:<br><br>
+            <input id="h1" type="text"><br><br>
+            ENTER STRING2:<br><br>
+            <input id="h2" type="text"><br><br>
+            
+            <button onClick="ENTER()"> COMPARE STRING </button><br><br>
+            <div id="demo" ></div>
+            <ol>
+                    <li>Returns -1 if str1 is sorted before str2</li>
+                    <li>Returns 0 if the two strings are equal</li>
+                    <li>Returns 1 if str1 is sorted after str2</li>
+                </ol>
+</body>
+
+</html> 

@@ -1,0 +1,22 @@
+<html>
+<head><title> BINARY TO HEXADECIMAL CONVERTION</title>
+
+    <script>
+         function ENTER()
+         {
+            var value = parseInt(document.getElementById("h1").value);
+            var dec=parseInt(value,2).toString(16);
+            document.getElementById("demo").innerHTML="BINARY TO HEXADECIMAL :"+dec;
+        }
+        
+    </script> 
+    <body>
+            
+            ENTER :<br><br>
+            <input id="h1" type="text"><br><br>
+            <button onClick="ENTER()">CONVERT </button><br><br>
+            <div id="demo" ></div>
+            
+</body>
+
+</html> 

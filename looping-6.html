@@ -1,0 +1,28 @@
+<html>
+
+<head><title>sum of first and last digits</title>
+    <script>
+        function ENTER() {
+            var n = parseFloat(document.getElementById("h1").value);
+            var lnum=n%10;
+            while(n>10)
+            {
+            var n=Math.floor(n/10);
+            
+            }
+            document.getElementById("demo").innerHTML = "FIRST DIGIT IS  :"+n+"<br><br>"+
+            "LAST DIGIT IS  :"+lnum+"<br><br>";
+            document.getElementById("demo1").innerHTML = "SUM OF FIRST AND LAST DIGIT IS : "+parseInt(n+lnum);
+            
+        }
+    </script></head>
+    <body>
+            
+           
+            ENTER NUMBER:<input id="h1" type="text"><br><br>
+            <button onClick="ENTER()">DIGITS SUM</button><br><br>
+            <div id="demo" ></div>
+            <div id="demo1"></div>
+</body>
+
+</html>

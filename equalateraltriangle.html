@@ -1,0 +1,22 @@
+
+<html>
+    <head>
+        <title>find area of equalateral triangle</title>
+    
+    <script>
+        function areaofequalateraltriangle()
+        {
+            var val1 = parseInt(document.getElementById("value1").value);
+            var ansD = document.getElementById("answer");
+            ansD.value = ((sqrt(3)/4)*(val1*val1));
+        }
+        
+    </script>
+    </head>
+    <body>
+       a=<input type="text" id="value1" value="" name="value1"></input>
+        <button onClick="areaofequalateraltriangle()">Calculate equalateral</button>
+        area of equalateraltriangle = <input type="text" id="answer" name="answer" value=""/>
+
+    </body>
+</html>

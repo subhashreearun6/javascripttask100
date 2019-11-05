@@ -1,0 +1,22 @@
+<html>
+<head><title>N NATURAL NUMBERS WHILE -LOOP</title>
+
+    <script>
+         function ENTER()
+         {
+            var n = parseInt(document.getElementById("h1").value);
+            var res = (n * (n + 1)) / 2;
+            document.getElementById("demo").innerHTML = "SUM OF "+n +" NATURAL NUMBERS :<span style='color:red'>" + res + " " + "</span>";
+        }
+        
+    </script> 
+    <body>
+            
+            ENTER :<br><br>
+            <input id="h1" type="text"><br><br>
+            <button onClick="ENTER()">FIND </button><br><br>
+            <div id="demo" ></div>
+            
+</body>
+
+</html> 
